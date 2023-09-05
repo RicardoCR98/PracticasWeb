@@ -1,0 +1,82 @@
+<!--
+RICARDO CAMPAÑA
+GR2SW
+12-06-2023
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        .container{
+            position: relative;
+            display: inline-block;
+            border: 2px solid black;
+        }
+        .container>h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 32px;
+            text-align: center;
+        }
+        .nombre>p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            text-align: left;
+        }
+        .div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 3s;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: #000000;
+            color: aliceblue;
+        }
+        .nombre{
+            position: absolute;
+            text-align: start;
+            top: 80%;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: red;
+            }
+
+            50% {
+                background-color: yellow;
+                width:400px;
+                height: 100px;
+            }
+
+            100% {
+                background-color: yellow;
+            }
+        }
+    </style>
+    <title>Actividad 1</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Actividad 1</h1>
+        <input type="button" value="Actualizar" onclick="location.reload()"/>
+        <br>
+        <br>
+        <div class="div"></div>
+    </div>
+    <div class="nombre">
+        <p>Ricardo Campaña</p>
+        <p>GR2SW</p>
+        <p>12-06-2023</p>
+    </div>
+</body>
+
+</html>
+

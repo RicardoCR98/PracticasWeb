@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor-Signos Vitales</title>
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JS de Fontawesome-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- AQUI EL CONTENIDO DE TU EXAMEN -->
+    <div class="container-fluid p-0">
+        <!--  -->
+
+        <div class="banner d-flex justify-content-between flex-row">
+            <div>VITAL SIGNAL MONITOR</div>
+            <div>TIME: MON 7TH, FREBRUARY 17:35</div>
+        </div>
+
+        <div class="d-flex flex-row justify-content-center mt-4 align-items-center">
+            <div>Select Patient:</div>
+            <i class="bx bx-user bx-md"></i>
+
+            <select class="bordeCaja" name="select">
+                <option value="value1">1722374 - Luis Contreras</option>
+            </select>
+        </div>
+
+
+        <!-- TARJETAS -->
+        <div class="row row-cols-sm-4 g-4 m-1">
+        <!--<div class="container-fluid p-0 d-flex flex-row caja justify-content-center">--> 
+
+            <div class="col">
+                <div class="card">
+                <div class="d-flex flex-row justify-content-center align-items-center mt-3">
+                    <i class="bx bx-user bx-md"></i>
+                    <h1>Patient Profile</h1>
+                </div>
+                <hr class="m-3">
+                <ul class="list-unstyled text-center">
+                    <li>Luis Contreras</li>
+                    <img src="img/avatar.png">
+                    <li>Age: 78 years Old</li>
+                    <li>City: Quito</li>
+                    <li>Gender: Male</li>
+                    <li>Mobile: 0982354456</li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                <div class="d-flex flex-row justify-content-center align-items-center mt-3">
+                    <img src="img/spo2.png">
+                    <h1>SPO2</h1>
+                </div>
+                <hr class="m-3">
+                <h2>98<p class="d-inline-block percent_bpm">%</p>
+                </h2>
+                <div class="d-flex justify-content-between m-2">
+                    <div class="text-center">
+                        <img src="img/realtime.png">
+                        <p>Real Time</p>
+                    </div>
+                    <div>
+                        <i class="bx bxs-bar-chart-alt-2 bx-md d-block text-center"></i>
+                        <p>Historical</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                <div class="d-flex flex-row justify-content-center align-items-center mt-3">
+                    <i class="bx bxs-heart bx-md"></i>
+                    <h1>HEART RATE</h1>
+                </div>
+                <hr class="m-3">
+                <h2>90<p class="d-inline-block percent_bpm">bpm</p>
+                </h2>
+                <div class="d-flex justify-content-between m-2">
+                    <div class="text-center">
+                        <img src="img/realtime.png">
+                        <p>Real Time</p>
+                    </div>
+                    <div>
+                        <i class="bx bxs-bar-chart-alt-2 bx-md d-block text-center"></i>
+                        <p>Historical</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                <div class="d-flex flex-row justify-content-center align-items-center mt-3">
+                    <i class="bx bxs-thermometer bx-md"></i>
+                    <h1>TEMPERATURE</h1>
+                </div>
+                <hr class="m-3">
+                <h2>36<p class="d-inline-block percent_bpm">%</h2>
+                <div class="d-flex justify-content-end m-2">
+                    <div class="text-center">
+                        <i class="bx bxs-bar-chart-alt-2 bx-md d-block"></i>
+                        <p>Historical</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        
+
+        <div class="col">
+            <div class="card">
+            <div class="d-flex flex-row justify-content-center align-items-center mt-3">
+                <i class="bx bx-shape-circle bx-md"></i>
+                <h1>IOT DEVICE INFO</h1>
+            </div>
+            <hr class="m-3">
+            <ul class="list-unstyled text-center">
+                <li>Identifier: 22312343-7</li>
+                <li>Type: STM32</li>
+                <li>Protocol: ZigBee</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

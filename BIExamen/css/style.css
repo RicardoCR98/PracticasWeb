@@ -1,0 +1,400 @@
+@font-face {
+    font-family: "Sunny Spells";
+    src: url("../fonts/SunnySpells.ttf");
+}
+
+* {
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-size: 15px;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: #181818;
+    background-color: #EEE;
+}
+
+button {
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 15px;
+    border: none;
+}
+
+:root {
+    --colorFondoVerde: #1D8B08;
+    --colorFondoAzul: #209dc7;
+    --colorBlanco: #FFF;
+    --colorNegro: #000;
+
+}
+
+/* Header 1 */
+
+
+.Hcontainer-1 {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--colorFondoVerde);
+    color: var(--colorLetra-secundario);
+
+}
+
+.Hitem-1 {
+    color: var(--colorBlanco);
+    width: 100%;
+    padding-left: 10%;
+}
+
+.Hitem-2 {
+    color: var(--colorBlanco);
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/* Header 2 */
+
+.Hcontainer-2 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: var(--colorFondo-white);
+}
+
+.H2item-1 {
+    font-family: "Sunny Spells";
+    font-size: 30px;
+    width: 200px;
+    padding-left: 10%;
+}
+
+.H2item-2 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    color: var(--colorNegro);
+
+}
+
+.H2item-2 li:hover {
+    cursor: pointer;
+    color: var(--colorFondoVerde);
+}
+
+.H2item-2 {
+    width: 800px;
+}
+
+
+
+.H2item-3 {
+    display: flex;
+    gap: 30px;
+}
+
+.btn-1 {
+    color: var(--colorBlanco);
+    background-color: var(--colorFondoVerde);
+}
+
+.btn-2 {
+    color: var(--colorBlanco);
+    background-color: var(--colorFondoAzul);
+}
+
+.btn-2:hover{
+    background-color: var(--colorFondoVerde);
+    color: var(--colorBlanco);
+}
+
+
+/* Section 1 */
+
+
+.Section-1 {
+    height: 660px;
+    width: 100%;
+    background-repeat: repeat;
+    background-image: url(https://picsum.photos/id/127/1096/768);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.S1-item-1 {
+    color: var(--colorBlanco);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.S1-item-1 button {
+    width: 150px;
+}
+
+.S1-item-2 {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 10px solid green;
+}
+.S1-item-2:hover{
+    animation: anim 0.3s linear forwards;
+    border: 10px solid #CCC;
+}
+
+
+
+/* Section 2 */
+
+
+.Section-2 {
+    background-color: #EEE;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    gap: 30px;
+}
+
+.S2-item-2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.S2-item-1 {
+    color: var(--colorFondoVerde);
+}
+
+.card {
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.card img {
+    border-radius: 50%;
+}
+
+.card img:hover{
+    animation: anim 0.3s linear forwards;
+    border: 10px solid #CCC;
+}
+
+.card h1 {
+    color: #209dc7;
+}
+
+/* Section 3 */
+
+.Section-3 {
+    background-color: var(--colorBlanco);
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    gap: 30px;
+}
+
+.S3-item-1 {
+    color: var(--colorFondoVerde);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.S3-item-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.item-1S3{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.item-2S3{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.tabla th,
+.tabla td {
+    padding: 8px;
+    border: 1px solid black;
+}
+
+.fila-1,
+.fila-3 {
+    background-color: rgba(132, 153, 2, 0.2);
+}
+
+.fila-2 {
+    background-color: rgba(2, 163, 26, 0.2);
+}
+
+.tabla tr {
+    padding: 30px;
+}
+
+/* Section 4 */
+
+
+.Section-4 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    color: var(--colorBlanco);
+    background-color: var(--colorNegro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.S4-item-2 button {
+    border: none;
+    color: var(--colorLetra-secundario);
+    height: 100px;
+    width: 200px;
+    background-color: var(--colorFondoVerde);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.S4-item-2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.btn-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.btn-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+/* Section 6 */
+
+.section-6 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: #444444;
+    color: var(--colorBlanco);
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.S6-item-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.S6-item-2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.S6-item-2--div {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    gap: 30px;
+    height: 300px;
+}
+
+.input {
+    border: none;
+    margin: 0;
+    width: 80%;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.S6-button {
+    width: 100px;
+}
+
+
+
+
+/* Footer */
+
+
+
+.section-7 {
+    padding: 30px;
+    color: var(--colorBlanco);
+    background-color: var(--colorNegro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-7 ul {
+    color: var(--colorFondoAzul);
+    display: flex;
+    gap: 30px;
+}
+
+
+
+@keyframes anim {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }

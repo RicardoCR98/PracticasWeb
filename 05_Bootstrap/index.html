@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <title>Document</title>
+    <style>
+        *{
+            border: 1px solid red;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <p class="h1 text-success">hola</p>
+    <div class="border text-center rounded">Caja</div> -->
+    <!-- h2 titulo
+        border: se pone bordes
+        text-center: se centra el texto
+        rounded: bordes redondeados
+        bg-primary: color de fondo azul
+        text-white: texto de blanco
+        p-2: padding de escala 2
+        border-top: se pone el borde de arriba
+    -->
+    <!-- <div class="h2 border text-center rounded text-white p-2 border-top" style="background-color: #aaa;">Caja 1</div>
+
+    <i class="fa-solid fa-arrows-rotate"></i> -->
+
+    <div class="container-fluid">
+        <!-- Fila superior -->
+        <div class="row">
+            BARRA SUPERIOR
+        </div>
+
+        <!-- Cuerpo -->
+        <div class="row">
+            <!-- Cuando es pequeño (3) -> display none -->
+            <!-- Cuando esta sin nada es xs 3 + 6 +3 = 12 -->
+            <!-- Hay que especificar que break poitn y eso se hace con d-noe, como no hay nada se aplica en cs (col-3) -->
+            <div class="col-md-3 d-none d-md-block bg-primary"> Lista de opciones</div>
+            <!-- cuando entres a md, t vas a valer 6 -->
+            <div class="col-12 col-md-6"> Publicaciones </div>
+            <div class="col-md-3 d-none d-md-block bg-primary"> Publicidades</div>
+
+        </div>
+
+        <div class="row">
+            <div class="col">COL 1</div>
+            <div class="col">COL 2</div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

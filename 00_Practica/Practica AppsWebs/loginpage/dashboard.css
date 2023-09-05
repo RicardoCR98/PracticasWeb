@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color:#000;
+}
+:root{
+    --color-de-paneles: rgb(245, 245, 247);
+    --color-de-fondo:rgb(255,255,255);
+}
+
+.paneles{
+    border-radius: 15px;
+    background-color: var(--color-de-paneles);
+}
+
+body, html{
+    display: block;
+    margin: 0px;
+    font-family: inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+
+.body{
+    height: 100%;
+    zoom: 0.9;
+}
+
+.container-header{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* .container-header>h1{
+    width: 95%;
+    text-align: center;
+    padding-left: 200px;
+}
+.container-header>a{
+    width: 5%;
+} */
+.container-main{
+    display: flex;
+    width: 100%;
+    height: 90%;
+}
+
+.container-main-1{
+    width: 25%;
+    height: 100%;
+}
+
+.icon{
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 15px;
+    
+}
+
+.icon:hover{
+    background-color: silver;
+}
+
+.container-main-1--1--1{
+    display: flex; 
+    justify-content: center;
+    width: 95%;
+    height: 75px;
+    position: relative;
+    left: 8px;
+}
+
+.container-main-1--1{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.container-main-1--2{
+    margin-top: 25px;
+    width: 95%;
+    height: 100px;
+    position: relative;
+    left: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.container-img{
+    width: 100%;
+    height: 40%; 
+    position: relative; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container-img img {
+    width: 85%; 
+    height: 100%; 
+    object-fit: cover; 
+    object-position: center center; 
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+
+
+
+
+
+
+
+  .container-main-2{
+    width: 75%;
+    border: 1px solir red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-wallet{
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .container-wallet-1{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    height: 20%;
+    align-items: center;
+  }
+
+  .select{
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid #000;
+    border-radius: 15px;
+  }
+
+  select.select {
+    background-color: #f0f0f0;
+    color: #000;
+  }
+
+  .calendario{
+    font-family: inter;
+    font-size: 14px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .calendario:focus{
+    border: none;
+  }
+
+
+  .container-wallet-2{
+    display: flex;
+    justify-content: space-around;
+    height: 80%;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .card{
+    text-align: center;
+    width: 30%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .card>h1{
+    padding-top: 30px;
+    font-size: 36px;
+  }
+
+  .card>p{
+    padding-top: 20px;
+    font-size: 16px;
+  }
+
+.container-transaction{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.table{
+    color:#fff;
+    width: 100%;
+    border-collapse: collapse; 
+    text-align: center;
+}
+.table th{
+    border-bottom: 1px solid black;
+    padding: 20px;
+    background-color: #ccc;
+}
+
+.table td{
+    padding: 20px;
+}
+
+.table tr:nth-child(even) {
+    background-color: white;
+  }
+
+.container-transaction-1{
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+    align-items: center;
+  }
+
+
+  /* ventana Emergente */
+  .overlay {
+    background: rgba(0,0,0,.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    visibility: hidden;
+  }
+  
+  .overlay.active {
+    visibility: visible;
+  }
+
+  .popup {
+    background: #F8F8F8;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    font-family: 'inter', Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    text-align: left;
+    width: 500px;
+    border-radius: 15px;
+    transition: .3s ease all;
+    transform: scale(0.7);
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    
+  }
+
+  .form-row select.short {
+    width: 60%; /* Puedes ajustar este valor según tus necesidades */
+}
+  .form-row{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    align-items: center;
+  }
+
+
+  .popup .btn-cerrar-popup {
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    transition: .3s ease all;
+    color: #BBBBBB;
+  }
+  
+ .btn-cerrar-popup:hover {
+    color: #000;
+  }
+  
+  .popup h3 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    opacity: 0;
+  }
+
+  
+  .popup input {
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+  .popup select{
+    border-radius: 15px;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  .form-row:last-child{
+    display: flex;
+    justify-content: center;
+  }
+
+  .popup .btn-submit {
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: #fff;
+    background: #979797;
+    border-radius: 3px;
+    font-family: 'inter', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+  }
+  
+  .popup .btn-submit:hover {
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+
+
+.popup.active {	
+  transform: scale(1); 
+  opacity: 1; 
+}
+.popup.active h3 { 
+  animation: entradaTitulo .8s ease .5s forwards; 
+}
+
+.form-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+@keyframes entradaTitulo {
+	from {
+		opacity: 0;
+		transform: translateY(-25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+

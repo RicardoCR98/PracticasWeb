@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "Sunny Spells";
+    src: url("../font/SunnySpells.ttf");
+}
+
+body{
+    font-family: Verdana, tahoma, sans-serif;
+    background-color: #EEE;
+    color: #181818;
+}
+
+.bg-primario{
+    background-color: #209dc7;
+}
+
+.bg-secundario{
+    background-color: #444;
+}
+
+.text-primario{
+    color: #209dc7;
+}
+
+.sunny-spells-font{
+    font-family: "Sunny Spells";
+}
+
+.font-size-36px{
+    font-size: 36px;
+}
+
+h1{
+    font-weight: bold;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: inline-block;
+}
+
+a{
+    color: #444;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #209dc7;
+}
+
+.m-10px{
+    margin: 10px;
+}
+
+.mt-10px{
+    margin-top: 10px;
+}
+
+.mb-10px{
+    margin-bottom: 10px;
+}
+
+.ms-10px{
+    margin-left: 10px;
+}
+
+.me-10px{
+    margin-right: 10px;
+}
+
+.mx-10px{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.my-10px{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.p-10px{
+    padding: 10px;
+}
+
+.pt-10px{
+    padding-top: 10px;
+}
+
+.pb-10px{
+    padding-bottom: 10px;
+}
+
+.ps-10px{
+    padding-left: 10px;
+}
+
+.pe-10px{
+    padding-right: 10px;
+}
+
+.px-10px{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.py-10px{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.p-30px{
+    padding: 30px;
+}
+
+.pt-30px{
+    padding-top: 30px;
+}
+
+.pb-30px{
+    padding-bottom: 30px;
+}
+
+.ps-30px{
+    padding-left: 30px;
+}
+
+.pe-30px{
+    padding-right: 30px;
+}
+
+.px-30px{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.py-30px{
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.boton-aplicacion{
+    border-radius: 15px;
+}
+
+input[type=text], input[type=email]{
+    height: 30px;
+    width: 100%;
+}
+
+input[type=checkbox]{
+    accent-color:#6dba50;
+}

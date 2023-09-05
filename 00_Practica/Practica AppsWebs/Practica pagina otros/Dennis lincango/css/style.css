@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "Sunny";
+    src: url("../font/SunnySpells.ttf");
+}
+
+div h1{
+font-size: 20px;
+}
+.fondoContactos{
+    background: #209dc7;
+}
+
+div h2{
+    font-family: Sunny;
+}
+
+.ffcuerpo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+
+.bgtarjetas{
+    background: #EEE;
+}
+
+img{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+}
+
+div h3{
+    color: #209dc7;
+    font-weight: bold;
+}
+
+.fctarjetas{
+    color: white;
+}
+
+.bginformacion{
+    background-color: #444444;
+}
+
+#imgcuadrada{
+    width:300px;
+    height:300px;
+    border-radius:0%;
+}
+
+.fcinfo{
+    color: #444444;
+}
+
+.fcinfo{
+    color: white;
+}
+
+#inf{
+    color: #209dc7;
+    font-size: 50px;
+}
+
+.descargas{
+    background-color:  #209dc7;
+    border-radius: 15px;
+}
+
+
+
+ 

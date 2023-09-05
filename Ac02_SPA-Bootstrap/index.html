@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Romanesco&display=swap" rel="stylesheet">
+    <title>Práctica Bootstrap</title>
+</head>
+<body>
+    
+    <div class="container-fluid containerG">
+        
+        <header class="row containerH">
+            <div class="col-sm d-none d-md-block col-md-1" ></div>
+            <!-- Menu -->
+            <div class="col-xs d-none col-sm d-sm-none d-md-block col-md-8 textoNormal mt-4 position-relative">
+                    <p class="col-sm d-inline-block hoverTexto position-absolute" >PROMOCIONES</p>
+                    <p class="col-sm d-inline-block hoverTexto position-absolute" style="left: 160px">FOTOS</p>
+                    <p class="col-sm d-inline-block hoverTexto position-absolute" style="left: 240px;">SERVICIOS</p>
+                    <p class="col-sm d-inline-block hoverTexto position-absolute" style="left: 360px;">MAPA</p>
+                    <p class="col-sm d-inline-block hoverTexto position-absolute" style="left: 440px;">CONTACTO</p>
+                    <p class="col-sm-4 d-inline-block"></p>
+            </div>
+
+            <div class="col-sm d-md-block col-md-3 md-block textoPequeno mt-3 position-relative">
+                <!--Cuenta-->
+                <div class="d-inline-block position-absolute" style="bottom: 10px;">
+                    <img class="Header-imagen1" src="images/user.png" alt="user">
+                </div>
+
+                <p class="d-inline-block hoverTexto position-absolute" style="left: 70px; top: 10px;">Mi cuenta</p>
+                <div class="d-inline-block position-absolute" style="left: 30px;">
+                    <p class="d-inline-block position-absolute" style="top: 10px; left: 175px;">ES</p>
+                    <!--Idioma-->
+                    <div class="d-inline-block position-absolute" style="left: 200px; top: 5px;">
+                        <img class="Header-imagen2" src="images/flag.png" alt="flag">
+                    </div>
+                    <div class="d-inline-block position-absolute" style="top: 12px; left: 247px;">
+                        <img class="Header-imagen3" src="images/arrow.png" alt="arrow">
+                    </div>
+                </div>
+               
+            </div>
+        </header>
+
+        <main class="">
+            <!--?Primera parte de la pagina-->
+            
+            <section class="row">
+                <div class="col bg-image position-relative">
+                    <div class="position-absolute" style="top:20%;left: 13%;">
+                        <h1 class="textoMain">SPA - Todos</h1>
+                    </div>
+                    <div class="position-absolute" style="top: 35%; left: 13%;">
+                        <br>
+                        <p class="textoMediano">Regálate un momento de paz y <br>consiente a tu piel en el mejor lugar</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--?Segunda parte de la pagina-->
+                <section class="row">
+                    <div class="col-sm d-sm-block d-md-block d-lg-inline-block containerSec2 text-center pt-lg-4">
+
+                        <div class="d-xs-inline-block col-sm d-sm-block d-md-block d-lg-inline-block col-lg-4 text-center">
+                            <p class="d-xs-inline-block d-sm-inline-block textoNormal">RESERVA TU CITA: </p>
+                            <input type="text" class="d-xs-inline-block d-sm-inline-block cajasTexto">
+                        </div>
+    
+                       <div class="d-xs-inline-block col-sm d-sm-block d-md-block d-lg-inline-block col-lg-4 text-center">
+                            <p class="d-xs-inline-block d-sm-inline-block textoNormal" >CODIGO PROMOCIONAL: </p>
+                            <input type="text" placeholder="CODIGO" class="d-xs-inline-block d-sm-inline-block cajasTexto">
+                       </div>
+                    </div>
+                </section>
+            
+            <!--?Tercera parte de la pagina-->
+
+            <section class="row">
+                <div class="position-relative" style="left: 130px; top: 100px; margin-bottom: 170px;">
+                    <article class="col d-inline-block cardServices" style="margin-right: 134px;">
+                        <h2 class="article-titulo">Masaje de pies</h2>
+                        <img class="img-fluid" src="images/pies.png" alt="pies">
+                        <p class="article-texto">Esta es una descripcion de la opción en <br> cuestión .....</p>
+                        <p class="article-precio">$65</p>
+                        <button class="button">RESERVAR</button>
+                    </article>
+                    <article class="col d-inline-block  cardServices" style="margin-right: 134px;">
+                        <h2 class="article-titulo">Masaje relajante</h2>
+                        <img class="img-fluid" src="images/relajante.png" alt="">
+                        <p class="article-texto">Esta es una descripcion de la opción en <br> cuestión .....</p>
+                        <p class="article-precio">$60</p>
+                        <button class="button">RESERVAR</button>
+                    </article>
+                    <article class="col d-inline-block cardServices"  style="margin-right: 134px;">
+                        <h2 class="article-titulo">Masaje con bambú</h2>
+                        <img class="img-fluid" src="images/bambu.png" alt="">
+                        <p class="article-texto">Esta es una descripcion de la opción en <br> cuestión .....</p>
+                        <p class="article-precio">$58</p>
+                        <button class="button">RESERVAR</button>
+                    </article>
+                </div>
+            </section>
+            
+
+
+            <!--?Cuarta parte de la pagina-->
+
+            <section class="row containerS" style="padding-bottom: 100px;">
+                <h1 class="text-center">Haste socio y prueba nuestros beneficios</h1>
+                <div class="position-relative" style="top: 100px; left: 170px;">
+
+                    <article class="col d-inline-block cardSuscription position-relative" style="padding-right: 120px; padding-bottom: 100px;">
+                        <div class="Section4-image position-relative">
+                            <img class="dibujoCirculo">
+                            <img src="images/gold.png" alt="gold" class="position-absolute" style="right: 55px; top: 50px;">
+                        </div>
+                        <h2 class="Section4-title">GOLD</h2>
+                        <button class="button button2">VER CONDICIONES</button>
+                        <ul>
+                            <li>Gimnasio</li>
+                            <li>Piscina</li>
+                            <li>Todos los tratamientos</li>
+                        </ul>
+                    </article>
+
+
+                    <article class="col d-inline-block cardSuscription position-relative" style="padding-right: 120px; bottom: 30px;  padding-bottom: 100px;">
+                        <div class="Section4-image position-relative">
+                            <img class="dibujoCirculo">
+                            <img src="images/premium.png" alt="premium" class="position-absolute" style="right: 55px; top: 50px;">
+                        </div>
+                        <h2 class="Section4-title">PREMIUM</h2>
+                        <button class="button button2">VER CONDICIONES</button>
+                        <ul>
+                            <li>Gimnasio</li>
+                            <li>Todos los tratamientos</li>
+                        </ul>
+                    </article>
+
+
+                    <article class="col d-inline-block cardSuscription position-relative" style="padding-right: 120px; bottom: 60px;  padding-bottom: 100px;">
+                        <div class="Section4-image  position-relative">
+                            <img class="dibujoCirculo">
+                            <img src="images/plate.png" alt="plate" class="position-absolute" style="right: 55px; top: 50px;">
+                        </div>
+                        <h2 class="Section4-title">PLATE</h2>
+                        <button class="button button2">VER CONDICIONES</button>
+                        <ul>
+                            <li>Tratamientos faciales</li>
+                        </ul>
+                    </article>
+
+
+                </div>
+            </section>
+        </main>
+
+        <footer class="row containerF">
+
+            <div class="d-none d-md-inline-block col-7 pt-4" style="margin-left: 50px;">
+                <p class="d-md-inline-block hoverTexto" style="margin-right:20px; margin-top: 10px;">POLITICAS DE COOKIES</p>
+                <p class="d-md-inline-block hoverTexto" style="margin-right:20px;">AVISO LEGAL</p>
+                <p class="d-md-inline-block hoverTexto" style="margin-right:20px;">PROTECCION DE DATOS</p>
+                <p class="d-md-inline-block hoverTexto">MAPA DEL SITIO</p>
+            </div>
+
+            <div class="d-md-inline-block col-md-4 col-12 text-center pt-4">
+
+                <p class="d-none d-md-inline-block" style="padding-right: 20px;">SIGUENOS EN </p>
+                <div class="col-md d-inline-block col">
+                    <img src="images/rs_facebook.png" alt="face">
+                </div>
+                <div class="col-dm d-inline-block col">
+                    <img src="images/rs_twiter.png" alt="twitter">
+                </div>
+                <div class="col-dm d-inline-block col">
+                    <img src="images/rs_youtube.png" alt="youtube">
+                </div>
+
+            </div>
+
+
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

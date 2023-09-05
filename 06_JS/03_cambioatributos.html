@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mensaje{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cambio de atributos de elementos HTML</h1>
+    <h2>Ejemplo: Cambiando atributos 'src' del elemento img</h2>
+    <img src="https://picsum.photos/200/300" alt="">
+
+    <h2 class=".mensaje">Haga click en cada opcion para ver el resultado</h2>
+
+    <ul>
+        <li onclick="tieneAtributo()">hasAttribute('src')</li>
+        <li onclick="obtenerAtributo()">getAttribute('src')</li>
+        <li onclick="removerAtributo()">removeAttribute('src')</li>
+        <li onclick="configurarAtributo()">setAttribute('src')</li>
+    </ul>
+
+    <script>
+        function tieneAtributo(){
+            var elemento = document.querySelector('img');
+            document.querySelector('.mensaje').textContent = elemento.hasAttribute("src");
+        }
+
+        function obtenerAtributo(){
+            var elemento1 = document.querySelector("img");
+            document.querySelector(".mensaje").textContent = elemento1.getAttribute("src"); 
+        }
+
+        function removerAtributo(){
+            var elemento1 = document.querySelector("img");
+            elemento1.removeAttribute("src");
+            document.querySelector(".mensaje").textContent = "Atributo eliminado";
+        }
+
+        function configurarAtributo(){
+            var elemento1 = document.querySelector("img");
+            elemento1.setAttribute("src", "https://picsum.photos/id/237/299/300");
+            document.querySelector(".mensaje").textContent = "Atributo configurado";
+        }
+    </script>
+</body>
+</html>

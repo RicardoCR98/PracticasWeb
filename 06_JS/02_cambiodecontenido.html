@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1> Cambio de contenido </h1>
+    <div class="miClase"> DIV 1</div>
+    <div class="miClase"> DIV 2</div>
+    <div> DIV 3</div>
+    <button onclick="cambiarContenido()">Cambiar contenido de DIVs</button>
+
+    <script>
+        //Esta funcion se puede compactar con la función flecha
+        function miFuncion(elementoHTML){
+            elementoHTML.textContent = "Texto cambiado";
+        }
+        //La funcion flecha:
+        var miFuncion = elementoHTML=>{
+            elementoHTML.textContent = "Texto cambiado";
+        }
+
+        //Este es una forma de hacer sin embargo podemos meter la función flecha dentro del foreach
+        function cambiarContenido(){
+            var arrayParrafos = document.querySelectorAll(".miClase");
+
+            arrayParrafos.forEach(miFuncion);
+        }
+
+        //Este es otra forma de hacerlo, con la funcion flecha dentro del foreach
+        function cambiarContenido(){
+            var arrayParrafos = document.querySelectorAll(".miClase");
+
+            arrayParrafos.forEach(elementoHTML=>{
+            elementoHTML.textContent = "Texto cambiado";
+        });
+        }
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function mostrarmensaje(){
+            alert("Se hizo click");
+        }
+        function mostrarmensajeDelElementoHTML(elementoHTML){
+            alert(elementoHTML.textContent)
+        }
+        function inicializar(){
+
+            //1.- Como propiedad del elemento (funcion mostrarmensaje)
+            var elemento1 = document.getElementsByTagName('p')[1];
+            elemento1.onclick = mostrarmensaje;
+
+            //1.1 Con la propiedad onEventListener
+            // var elemento2 = document.getElementsByTagName('p')[2];
+            // elemento2.addEventListener("click", mostrarmensaje);
+
+            // Formas contraidas
+            document.getElementsByTagName("p")[1].onclick = mostrarmensaje;
+
+            //Mostrar contenido del elemento parrafo
+
+            /*
+            Esto no funciona porque se produce el efecto burbuja (onda), se ejecuta primero lo que
+            hay dentro de la función y luego trata de ejecutar lo que está afuera, un comportamiento anormal
+            document.getElementsByTagName("p")[2].addEventListener(
+                "click", 
+                mostrarmensajeDelElementoHTML(document.getElementsByTagName("p")[2])
+                );
+                */
+
+            document.getElementsByTagName("p")[2].addEventListener(
+                "click", 
+                function(){
+                    mostrarmensajeDelElementoHTML(this)
+                }
+                );
+        
+        }
+
+        window.onload = inicializar;
+    </script>
+
+</head>
+<body>
+
+    <h1>Forma 1: Manejadores en línea</h1>
+    <p onclick="alert('Se realizó click -> Manjeador en línea')"> Hacer Click</p>
+    
+    <h1>Forma 2: Manejadores con propiedades</h1>
+    <p> Hacer Click</p>
+    
+    <h1>Forma 3: Manejadores con EventListener</h1>
+    <p> Hacer Click (Forma 3)</p>
+
+    <script>
+
+    </script>
+</body>
+</html>

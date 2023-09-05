@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	
+	<persistence-unit name="carlitosjpa"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/cuentasjpa" />
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="javax.persistence.jdbc.password" value="root" />
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
+			<!-- el orm entieende que cada entidad que hice, genera una tabla en la BD -->
+			<!-- <property name="eclipselink.ddl-generation" value="create-tables" /> --> 	
+			<!-- si es que la bd ya tenia tablas, borra las tabla y vuelve a generar las tablas basandose en las entidades que creamos, Persona, banco u Cuenta bancaria -->
+			<!-- <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/> -->
+			<!-- no elimina ni crea bd, solo persiste, con este nos aseguramos que no va a borrar la BD, sino que va a usar la estructura que ya tenia la BD -->
+			<property name="eclipselink.ddl-generation" value="none" /> 
+		</properties>
+
+
+	</persistence-unit>
+</persistence>

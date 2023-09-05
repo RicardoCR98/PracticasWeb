@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lectura de Nodos de un documento HTML</title>
+</head>
+
+<body>
+    <!-- Cunado hay un salto de linea el navegador lo interpreta como tipo text -->
+    <p>Este es un texto</p>
+    <div>
+        <p>Párrafo 1 dentro de DIV</p>
+        <!-- este es un comentario -->
+    </div>
+    <p>Es es un segundo párrafo <span class="importante">que será leído</span></p>
+
+    <script>
+        function recursividad(nodo) {
+            var arrayNodos = nodo.childNodes;
+            arrayNodos.forEach(element => {
+                console.log("=========================");
+                console.log("El nodo " + element.nodeName + " es de tipo : (" + element.nodeType + ") y su valor es: " + element.nodeValue);
+                console.log("Nodo Padre: " + element.parentNode);
+                if (element.hasChildNodes) {
+                    recursividad(element);
+                }
+            });
+
+
+        }
+        recursividad(document.body);
+    </script>
+</body>
+
+</html>
